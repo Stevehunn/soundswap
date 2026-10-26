@@ -1,0 +1,15 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+  <SolidColorBrush x:Key="WindowBrush" Color="#14161B" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"/>
+  <SolidColorBrush x:Key="PanelBrush" Color="#1C1F26" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"/>
+  <SolidColorBrush x:Key="ActivePanelBrush" Color="#1C2A29" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"/>
+  <SolidColorBrush x:Key="InputBrush" Color="#12141A" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"/>
+  <SolidColorBrush x:Key="HoverBrush" Color="#262A33" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"/>
+  <SolidColorBrush x:Key="LineBrush" Color="#2A2E38" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"/>
+  <SolidColorBrush x:Key="TextBrush" Color="#E8EAF0" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"/>
+  <SolidColorBrush x:Key="MutedBrush" Color="#A3AABB" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"/>
+  <SolidColorBrush x:Key="AccentBrush" Color="#3DDBB0" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"/>
+  <SolidColorBrush x:Key="OnAccentBrush" Color="#0E1514" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"/>
+  <SolidColorBrush x:Key="DangerBrush" Color="#FF7B7B" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"/>
+  <SolidColorBrush x:Key="OverlayBrush" Color="#FFFFFF" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"/>
+  <SolidColorBrush x:Key="DangerSoftBrush" Color="#33FF7B7B" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"/>
+</ResourceDictionary>

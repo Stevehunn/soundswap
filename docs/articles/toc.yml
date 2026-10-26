@@ -1,0 +1,8 @@
+- name: User guide
+  href: user-guide.md
+- name: Architecture
+  href: architecture.md
+- name: Updates
+  href: updates.md
+- name: Releasing
+  href: releasing.md

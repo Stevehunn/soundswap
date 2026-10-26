@@ -1,0 +1,24 @@
+{
+  "metadata": [
+    {
+      "src": [ { "src": "../src", "files": [ "**/*.csproj" ] } ],
+      "dest": "api",
+      "disableGitFeatures": true
+    }
+  ],
+  "build": {
+    "content": [
+      { "files": [ "api/**.yml", "api/index.md" ] },
+      { "files": [ "articles/**.md", "articles/**/toc.yml", "toc.yml", "index.md" ] }
+    ],
+    "resource": [ { "files": [ "banner.png" ] } ],
+    "output": "_site",
+    "template": [ "default", "modern" ],
+    "globalMetadata": {
+      "_appName": "SoundSwap",
+      "_appTitle": "SoundSwap documentation",
+      "_appLogoPath": "banner.png",
+      "_enableSearch": true
+    }
+  }
+}

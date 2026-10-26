@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>disable</ImplicitUsings>
+    <AssemblyName>SoundSwap</AssemblyName>
+    <RootNamespace>SoundSwap.Desktop</RootNamespace>
+    <ApplicationIcon>Assets\SoundSwap.ico</ApplicationIcon>
+    <SatelliteResourceLanguages>en</SatelliteResourceLanguages>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <!-- XAML code-behind and generated members are not documented one by one. -->
+    <NoWarn>$(NoWarn);CS1591</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="CommunityToolkit.Mvvm" Version="8.2.2" />
+    <ProjectReference Include="..\SoundSwap.Core\SoundSwap.Core.csproj" />
+    <ProjectReference Include="..\SoundSwap.Audio\SoundSwap.Audio.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\*.png;Assets\*.ico" />
+    <!-- One JSON per language, embedded in the executable. -->
+    <EmbeddedResource Include="Localization\Lang\*.json" />
+  </ItemGroup>
+</Project>

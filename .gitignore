@@ -1,0 +1,8 @@
+bin/
+obj/
+.vs/
+artifacts/
+*.user
+*.suo
+docs/api/
+docs/_site/

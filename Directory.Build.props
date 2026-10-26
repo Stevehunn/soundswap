@@ -1,0 +1,9 @@
+<Project>
+  <PropertyGroup>
+    <LangVersion>latest</LangVersion>
+    <Nullable>enable</Nullable>
+    <Version>1.2.0</Version>
+    <Company>SoundSwap</Company>
+    <Product>SoundSwap</Product>
+  </PropertyGroup>
+</Project>

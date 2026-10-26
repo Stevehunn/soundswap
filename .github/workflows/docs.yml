@@ -1,0 +1,36 @@
+name: docs
+# Builds the API reference (from the XML comments) + articles with DocFX and publishes them on GitHub Pages.
+on:
+  push:
+    branches: [main]
+    paths: ["src/**", "docs/**", ".github/workflows/docs.yml"]
+  workflow_dispatch:
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+concurrency:
+  group: pages
+  cancel-in-progress: true
+jobs:
+  build:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: 8.0.x
+      - run: dotnet tool update -g docfx
+      - run: docfx docs/docfx.json
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: docs/_site
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

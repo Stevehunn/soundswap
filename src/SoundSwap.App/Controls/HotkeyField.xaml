@@ -1,0 +1,16 @@
+<UserControl x:Class="SoundSwap.Desktop.Controls.HotkeyField"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:loc="clr-namespace:SoundSwap.Desktop.Localization"
+             xmlns:ctl="clr-namespace:SoundSwap.Desktop.Controls">
+  <Grid>
+    <ctl:HotkeyBox Padding="10,0,40,0"
+                   Value="{Binding Value, RelativeSource={RelativeSource AncestorType=UserControl}, Mode=TwoWay}"/>
+    <Button x:Name="ClearButton" Style="{StaticResource IconButton}" Visibility="Collapsed"
+            HorizontalAlignment="Right" Margin="0,0,6,0" Click="OnClear" ToolTip="{loc:Loc clear_shortcut}">
+      <!-- Cross drawn as vector: renders the same on every machine/font. -->
+      <Path Data="M0,0 L10,10 M10,0 L0,10" StrokeThickness="1.6" StrokeStartLineCap="Round" StrokeEndLineCap="Round"
+            Stroke="{Binding Foreground, RelativeSource={RelativeSource AncestorType=Button}}"/>
+    </Button>
+  </Grid>
+</UserControl>
